@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>游戏大全</title>
+     <style>
+         body, html {
+             height: 100%;
+             margin: 0;
+             font-family: Arial, sans-serif;
+         }
+         .container {
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: center;
+             align-items: center;
+             padding: 10px;
+             height: 100%;
+         }
+         .game {
+             flex: 1 1 200px; /* 每个游戏项至少200px宽，根据可用空间伸缩 */
+             margin: 10px;
+             text-align: center;
+         }
+         .game img {
+             max-width: 100%;
+             height: auto;
+             margin-bottom: 5px;
+         }
+         @media (max-width: 600px) {
+             .game {
+                 flex-basis: 100%; /* 在小屏幕下，每个游戏项占满整行 */
+             }
+         }
+     </style>
+</head>
+<body>
+     <div class="container">
+         <!-- 游戏项 -->
+         <!-- 请替换以下src和href属性为实际的图标和下载链接 -->
+         <div class="game">
+             <img src="/storage/emulated/0/Pictures/Screenshots/Screenshot_20240817_214415.jpg" alt="王者荣耀图标" />
+             <a href="http://m.2265.com/k/wangzherongyao">王者荣耀下载</a>
+         </div>
+         <div class="game">
+             <img src="" alt="和平精英图标" />
+             <a href="download_link2.html">和平精英下载</a>
+         </div>
+         <div class="game">
+             <img src="icon3.png" alt="金铲铲之战图标" />
+             <a href="download_link3.html">金铲铲之战下载</a>
+         </div>
+         <div class="game">
+             <img src="icon4.png" alt="海螺AI图标" />
+             <a href="download_link4.html">海螺AI下载</a>
+         </div>
+     </div>
+</body>
+</html>
